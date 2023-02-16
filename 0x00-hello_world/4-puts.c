@@ -2,7 +2,7 @@
 /**
 * main - this is main function
 * description - main uses puts function
-* return: 0 (success)
+* Return: 0 (success)
 */
 int main(void)
 {
