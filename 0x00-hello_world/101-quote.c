@@ -1,8 +1,12 @@
 #include <stdio.h>
+#include <unistd.h>
+/**
+ * main - standaard error
+ * Return: 1 success
 int main(void)
 {
-("with proper grammar, but the outcome is a piece of art,\n");
+fput("and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", stdout);
 
-return (0);
+return (1);
 }
 
