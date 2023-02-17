@@ -1,17 +1,17 @@
 #include <stdio.h>
 /**
- * main - lower abc...
+ * main - lower zyx...
  * Return: 0
  */
 int main(void)
 {
 char alpha;
 
-        for (alpha = 'z'; alpha >= 'a'; alpha--)
-                putchar(alpha);
+for (alpha = 'z'; alpha >= 'a'; alpha--)
+putchar(alpha);
 
-        putchar('\n');
+putchar('\n');
 
-        return (0);
+return (0);
 }
 
