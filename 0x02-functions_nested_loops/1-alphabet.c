@@ -5,7 +5,6 @@
  */
 int main(void)
 {
-for (c = a; c <= z; c++)
-_putchar('c');
+print_alphabet();
 return (0);
 }
