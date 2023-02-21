@@ -1,4 +1,4 @@
-#include <stdio.c>
+#include <stdio.h>
 /**
  * main - finds and prints the first 98 fibonacci num
  * Return: 0
