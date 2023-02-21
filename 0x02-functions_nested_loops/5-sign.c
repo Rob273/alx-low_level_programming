@@ -2,7 +2,7 @@
 /**
  * print_sign - prints the sign of a number
  * @n: number
- * Return: -1
+ * Return: 1 for pos, -1 for neg
  */
 
 int print_sign(int n)
@@ -22,5 +22,4 @@ else if (n == 0)
 	_putchar(48);
 	return (0);
 }
-return ();
 }
