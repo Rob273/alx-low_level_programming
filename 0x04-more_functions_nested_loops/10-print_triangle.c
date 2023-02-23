@@ -12,7 +12,7 @@ if (size <= 0)
 {
 _putchar('\n');
 }
-else 
+else
 {
 for (c = 0; c < size; c++)
 {
