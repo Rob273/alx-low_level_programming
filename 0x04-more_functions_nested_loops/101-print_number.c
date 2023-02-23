@@ -14,12 +14,13 @@ unsigned int r = n;
 
 if (n < 0)
 {
-	n *= -1;
+n *= -1;
+r = n;
 _putchar('-');
 }
 r /= 10;
 if (r != 0)
-print_number(k);
+print_number(r);
 _putchar((unsigned int) n % 10 + '0');
 
 }
