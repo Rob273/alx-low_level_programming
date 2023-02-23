@@ -18,5 +18,6 @@ for (r = 0; r < n; r++)
 {
 _putchar(92);
 }
+_putchar('\n')
 }
 }
