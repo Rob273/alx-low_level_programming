@@ -6,15 +6,19 @@
  *Return: 0
  */
 
-char *_strcpy(char *dest, const char *src)
+char *_strcpy(char *dest, char *src)
 {
-int index = 0;
+char *a;
+char *b;
+a = dest;
+b = src;
 
-while (src[index])
+while (*b != '\0')
 {
-dest[index] = src[index];
-index++;
+*a = *b;
+a++;
+b++;
 }
-
+*a = '\0';
 return (dest);
 }
