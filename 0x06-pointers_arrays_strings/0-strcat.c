@@ -23,7 +23,5 @@ dest[count++] = src[r];
 
 }
 
-
-
 return (dest);
 }
