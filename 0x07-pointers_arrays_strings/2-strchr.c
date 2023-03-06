@@ -10,7 +10,7 @@ char *_strchr(char *s, char c)
 unsigned int r;
 
 
-for (r = 0; s[r]; r++)
+for (r = 0; s[r] >= '\0'; r++)
 {
 	if (s[r] == c)
 	{
