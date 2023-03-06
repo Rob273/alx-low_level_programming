@@ -6,16 +6,30 @@
  * Return: 0
  */
 unsigned int _strspn(char *s, char *accept)
-{
-unsigned int c, r;
-r = 0;
 
-for (c = 0; s[c] >= '\0'; c++)
 {
-	if (accept[c] == s[c])
+	int i, j, match, accept_len;
+	unsigned int byte_count = 0;
+
+	byte_count = 0;
+
+	for (i = 0; accept[i] != '\0'; i++)
+		;
+	accept_len = i;
+
+	for (i = 0; s[i] != '\0'; i++)
 	{
-	r++;
+		match = 0;
+		for (j = 0; accept[j] != '\0'; j++)
+		{
+			if (accept[j] == s[i])
+				match = 1;
+
+			if (j == accept_len - 1 && match == 1)
+				byte_count++;
+			else if (j == accept_len - 1 && match == 0)
+				return (byte_count);
+		}
 	}
-}
-return (r);
+	return (byte_count);
 }
