@@ -34,4 +34,5 @@ free(twoD);
 return (NULL);
 }
 }
+rerturn (twoD);
 }
