@@ -44,17 +44,11 @@ int count_words(char *str)
 		{
 			words++;
 			index += word_len(str + index);
-w][l] = '\0';
-	}
-	strings[w] = NULL;
-
-	return (strings);
-}		}
+		}
 	}
 
 	return (words);
 }
-
 /**
  * strtow - Splits a string into words.
  * @str: The string to be split.
@@ -102,5 +96,6 @@ char **strtow(char *str)
 		strings[w][l] = '\0';
 	}
 	strings[w] = NULL;
+
 	return (strings);
 }
