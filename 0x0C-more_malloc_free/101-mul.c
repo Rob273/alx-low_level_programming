@@ -49,7 +49,9 @@ char *create_xarray(int size)
 	array[index] = '\0';
 
 	return (array);
-}**
+}
+
+/**
  * iterate_zeroes - Iterates through a string of numbers containing
  *                  leading zeroes until it hits a non-zero number.
  * @str: The string of numbers to be iterate through.
@@ -83,7 +85,9 @@ int get_digit(char c)
 	}
 
 	return (digit);
-}/**
+}
+
+/**
  * get_prod - Multiplies a string of numbers by a single digit.
  * @prod: The buffer to store the result.
  * @mult: The string of numbers.
@@ -130,7 +134,9 @@ void get_prod(char *prod, char *mult, int digit, int zeroes)
 
 	if (tens)
 		*prod = (tens % 10) + '0';
-}/**
+}
+
+/**
  * add_nums - Adds the numbers stored in two strings.
  * @final_prod: The buffer storing the running final product.
  * @next_prod: The next product to be added.
@@ -170,7 +176,9 @@ void add_nums(char *final_prod, char *next_prod, int next_len)
 
 	if (tens)
 		*final_prod = (tens % 10) + '0';
-}/**
+}
+
+/**
  * main - Multiplies two positive numbers.
  * @argv: The number of arguments passed to the program.
  * @argc: An array of pointers to the arguments.
