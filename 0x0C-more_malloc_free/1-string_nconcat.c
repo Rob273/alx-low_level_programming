@@ -18,7 +18,7 @@ if (s1 == NULL)
 	s1 = "";
 if (s2 == NULL)
 	s2 = "";
-for (r = 0; s1[r] >= '\0'; r++)
+for (r = 0; s1[r]; r++)
 {
 	s++;
 }
@@ -29,13 +29,14 @@ if (concat == NULL)
 }
 s = 0;
 
-for (r = 0; s1[r] > '\0'; r++)
+for (r = 0; s1[r]; r++)
 {
 concat[s++] = s1[r];
 }
-for (r = 0; s2[r] >= '\0' && r < n; r++)
+for (r = 0; s2[r] && r < n; r++)
 {
 	concat[s++] = s2[r];
 }
+concat [s] = '\0';
 return (concat);
 }
