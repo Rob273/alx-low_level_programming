@@ -51,7 +51,8 @@ dog_t *new_dog(char *name, float age, char *owner)
 	return (cutie_dog);
 }
 
-/*** _strlen - Returns the length of a string
+/**
+ * _strlen - Returns the length of a string
  * @s: String to count
  *
  * Return: String length
@@ -86,5 +87,5 @@ char *_strcpy(char *dest, char *src)
 
 	dest[i++] = '\0';
 
-	return (dest);
+return (dest);
 }
